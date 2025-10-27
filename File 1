@@ -1,0 +1,10 @@
+import numpy as np
+
+def simulate_positions(n):
+    positions = []
+    for i in range(n):
+        entry = np.random.uniform(95, 105)
+        exit = entry + np.random.uniform(-2, 2)
+        pnl = (exit - entry)/entry*100
+        positions.append({'position': i+1, 'entry': entry, 'exit': exit, 'pnl_pct': round(pnl,2)})
+    return positions
