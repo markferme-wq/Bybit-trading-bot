@@ -1,0 +1,7 @@
+# Encryption helper placeholder for demo
+
+def encrypt_config(data, passphrase):
+    return data
+
+def decrypt_config(enc_data, passphrase):
+    return enc_data
