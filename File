@@ -1,0 +1,14 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+from btc_bybit_bot_secure import simulate_positions
+
+st.title("BTC Bybit Secure Demo (Mobile-Friendly)")
+st.write("This is a demo Streamlit app for mobile testing.")
+
+positions = simulate_positions(10)  # simulate 10 positions
+df = pd.DataFrame(positions)
+st.dataframe(df)
+
+st.write("Summary:")
+st.write(df['pnl_pct'].describe())
