@@ -1,0 +1,16 @@
+# BTC Bybit Mobile-Friendly Streamlit App
+
+## Deployment Instructions
+1. Install Pydroid 3 from the Play Store.
+2. Create a repository on GitHub called `btc_bybit_mobile_app`.
+3. Copy each of the above 4 files into the repository.
+4. On your phone, open the repository and tap **Code → Download ZIP**.
+5. Unzip the folder on your phone using Files by Google or ZArchiver.
+6. Open Pydroid 3 → Terminal.
+7. Navigate to the folder:
+   cd /storage/emulated/0/Download/btc_bybit_mobile_app
+8. Install dependencies once:
+   pip install streamlit pandas numpy
+9. Run the app:
+   streamlit run app_bybit_secure.py
+10. Open the URL in your browser and optionally add a home screen shortcut.
